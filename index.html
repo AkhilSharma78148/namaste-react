@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css"></link>
+</head>
+<body>
+    <div id="root">Not rendered</div>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="App.js"></script>
+
+    <script>
+        //Arrow fn and normal functions
+        const obj = {
+            name: "Akhil",
+            person: function() { //refers to parent
+                console.log("thisName=",this.name);
+                console.log("this=",this);
+            },
+            person2: () => { //refers to window object
+                console.log("thisName=",this.name);
+                console.log("this=",this);
+            }
+        }
+        obj.person();
+        obj.person2();
+
+        //Output=
+            //thisName= Akhil
+            //this= {name: 'Akhil', person: ƒ, person2: ƒ}
+            //thisName= 
+            //this= Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+    </script>
+
+</body>
+</html>
