@@ -8,7 +8,7 @@ const heading = React.createElement(
 
 const heading2 = React.createElement(
     "h2",
-    {
+    { //props
         id: "title"
     },
     "Heading 2"
@@ -16,7 +16,7 @@ const heading2 = React.createElement(
 
 const container = React.createElement(
     "div",
-    {
+    { //props
         id: "container",
     },
     [heading, heading2]

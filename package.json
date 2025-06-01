@@ -1,0 +1,22 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "react basic app",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkhilSharma78148/namaste-react.git"
+  },
+  "author": "Akhil Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkhilSharma78148/namaste-react/issues"
+  },
+  "homepage": "https://github.com/AkhilSharma78148/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
