@@ -5,6 +5,12 @@
 
 # run/execute code using parcel cmd as below(create the development build)-
 - npx parcel index.html
+- OR (Another way)
+- npm run start
+- OR (Another way)
+- npm start
 
 # to build production build using parcel
 - npx parcel build index.html
+- OR (Another way)
+- npm run build

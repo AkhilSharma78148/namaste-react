@@ -14,6 +14,9 @@
  * Manage the Port Number (auto generate port number)
  * Consistent Hashing Algorithm
  * Zero Config
+ * Tree Shaking - removing un-wanted code
+ * 
+ * 
  * 
  * 
  * Transitive Dependencies
