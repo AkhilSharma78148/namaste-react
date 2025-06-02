@@ -1,6 +1,7 @@
 /**
+ * Created A Server (http://localhost:1234/)
  * Parcel do following for us:-
- * HMR - Hot Module Reloading 
+ * HMR - Hot Module Replacement 
  * File Watcher Algorithm - C++
  * BUNDLING
  * MINIFY
