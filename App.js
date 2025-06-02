@@ -1,3 +1,24 @@
+/**
+ * Parcel do following for us:-
+ * HMR - Hot Module Reloading 
+ * File Watcher Algorithm - C++
+ * BUNDLING
+ * MINIFY
+ * Cleaning our code
+ * Super Fast build Algorithm
+ * Image Optimization
+ * Caching while development
+ * Compatable with older version of browser
+ * HTTPS on dev (cmd is:- npx parcel index.html --https)
+ * Manage the Port Number (auto generate port number)
+ * Consistent Hashing Algorithm
+ * Zero Config
+ * 
+ * 
+ * Transitive Dependencies
+ * 
+ */
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 
