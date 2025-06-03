@@ -14,3 +14,6 @@
 - npx parcel build index.html
 - OR (Another way)
 - npm run build
+
+# This plugin removes all console (dev dependency mode)
+- npm install babel-plugin-transform-remove-console --save-dev

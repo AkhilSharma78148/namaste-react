@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/AkhilSharma78148/namaste-react#readme",
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.15.2"
   },
   "dependencies": {
