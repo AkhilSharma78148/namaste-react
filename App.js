@@ -57,5 +57,12 @@ const container = React.createElement(
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+//JSX ?? Is a HTML like syntax but it is not HTML inside javascript
+const heading4 = (
+    <h1 id="title" key="h4">
+        Namaste React Heading
+    </h1>
+);
+
 //passing a react element inside the root
-root.render(container);
+root.render(heading4);
