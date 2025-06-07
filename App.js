@@ -28,12 +28,14 @@ import ReactDOM from "react-dom/client";
 
 const heading = React.createElement(
     "h1", 
-    {
+    {   //props
         id: "title",
         key: "h1"
     },
-    "Heading 1"
+    "Heading 1 for parcel"
 );
+
+//React.createElemt -> returns object -> HTML (DOM)
 
 const heading2 = React.createElement(
     "h2",
@@ -48,6 +50,7 @@ const container = React.createElement(
     "div",
     { //props
         id: "container",
+        hello: "world"
     },
     [heading, heading2]
 );
