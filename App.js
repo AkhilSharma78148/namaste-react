@@ -35,9 +35,40 @@ const Header = () => {
     )
 }
 
+const restrauntObj = {
+    name: "Burger King",
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/enj3srsnhbltbom2ovvh",
+    place: "YamunaNagar",
+    causines: ["Dal", "Roti"],
+    rating: 4.3
+}
+
+const RestrauntCard = () => {
+    return (
+        <div className="card">
+            <img src={restrauntObj.img} alt="Restraunt Img" className="restraunt-img"/>
+            <h2>{restrauntObj.name}</h2>
+            <h3>{restrauntObj.place}</h3>
+            <h3>{restrauntObj.causines.join(", ")}</h3>
+            <h5>{restrauntObj.rating}</h5>
+        </div>
+    )
+}
+
 const Body = () => {
     return (
-        <h3>Body</h3>
+        <div className="restraunt-list">
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+           <RestrauntCard />
+        </div>
     )
 }
 
@@ -57,22 +88,9 @@ const AppLayout = () => {
     )
 }
 
-const styleObj = {
-    border: "1px solid green",
-};
-
-//Inline styling in React
-const jsx = (
-    <div style={{
-        backgroundColor: "red"
-    }}>
-        <h1>Style in jsx</h1>
-    </div>
-)
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
 //passing a react element inside the root
-root.render(jsx);
+root.render(<AppLayout />);
