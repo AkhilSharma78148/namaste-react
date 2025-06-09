@@ -1,45 +1,65 @@
-import React from "react";
+import React     from "react";
 import ReactDOM from "react-dom/client";
+import { LOGO_IMG } from "./src/utils/constants";
 
-//JSX ?? Is a HTML like syntax but it is not HTML inside javascript
-//JSX => React.createElement => Object => HTML rendere as (DOM)
-//Using Bables -> JSX code into React.createElement 
-const heading4 = ( //JSX expression
-    <h1 id="title" key="h4">
-        Namaste React Heading
-    </h1>
+
+const AppLogo = () => (
+    <a href="/">
+        <img alt="logo" className="logo" src={LOGO_IMG}/>
+    </a>
 );
 
-//Functional component
-const Title = () => (
-    <h1 key="h1">Namaste React Main Heading</h1>
-);
-
-//
-const subTitle = ( //React Element
-    <h2 key="h2">Namaste React Subheading</h2>
-);
-
-//React Component
-    //Class Based Component
-    //Functional component
-
-// Functional Component
-const HeaderComponent = () => {
-    //Also Return some piece of react element
+const Header = () => {
     return (
-            <div>
-                <Title/> { /* Calling another component inside the component => also called as Composition/composite component  */}
-                {subTitle} {/*  React Element call inside the component */}
-                <h3>Namaste React Functionaly Component</h3>
+        <div className="header">
+            <AppLogo />
+            <div className="nav-items">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About Us
+                    </li>
+                    <li>
+                        Contact Us
+                    </li>
+                    <li>
+                        <button>
+                            Login
+                        </button>
+                    </li>
+                </ul>
             </div>
+        </div>
     )
 }
 
+const Body = () => {
+    return (
+        <h3>Body</h3>
+    )
+}
+
+const Footer = () => {
+    return (
+        <h5>Footer</h5>
+    )
+}
+
+const AppLayout = () => {
+    return (
+        <React.Fragment>
+            <Header />
+            <Body />
+            <Footer />
+        </React.Fragment>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
 //passing a react element inside the root
-root.render(<HeaderComponent/>);
+root.render(<AppLayout/>);
