@@ -63,7 +63,9 @@ const styleObj = {
 
 //Inline styling in React
 const jsx = (
-    <div style={styleObj}>
+    <div style={{
+        backgroundColor: "red"
+    }}>
         <h1>Style in jsx</h1>
     </div>
 )
