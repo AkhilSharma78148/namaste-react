@@ -57,9 +57,20 @@ const AppLayout = () => {
     )
 }
 
+const styleObj = {
+    border: "1px solid green",
+};
+
+//Inline styling in React
+const jsx = (
+    <div style={styleObj}>
+        <h1>Style in jsx</h1>
+    </div>
+)
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
 //passing a react element inside the root
-root.render(<AppLayout/>);
+root.render(jsx);
